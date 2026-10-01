@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>القائمة | حلويات النخوة</title>
+<meta name="description" content="قائمة حلويات النخوة – Al Nakhwe Sweets">
+<meta name="theme-color" content="#7a0f14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <!-- Replace assets/hero.jpg with your storefront photo (logo is part of the photo) -->
+  <img src="assets/hero.jpg" alt="واجهة محل حلويات النخوة – Al Nakhwe Sweets" width="1584" height="565">
+  <div class="badge"><span>MENU</span><i aria-hidden="true">|</i><span>القائمة</span></div>
+</header>
+
+<main>
+  <nav class="filters" aria-label="تصنيفات القائمة">
+    <button type="button" class="chip is-active" data-cat="all" aria-pressed="true">الكل</button>
+    <button type="button" class="chip" data-cat="معمول" aria-pressed="false">معمول</button>
+    <button type="button" class="chip" data-cat="حلويات شرقية" aria-pressed="false">حلويات شرقية</button>
+    <button type="button" class="chip" data-cat="كعكة الكنافة" aria-pressed="false">كعكة الكنافة</button>
+  </nav>
+
+  <div class="search">
+    <label for="q" class="sr-only">ابحث عن صنف</label>
+    <input id="q" type="search" placeholder="ابحث عن صنف…" autocomplete="off" enterkeyhint="search">
+  </div>
+
+  <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+  <div id="menu" class="menu"></div>
+  <p id="empty" class="empty" hidden>لم نجد أي صنف مطابق. جرّب كلمة أخرى أو اختر «الكل».</p>
+</main>
+
+<footer>حلويات النخوة – <bdi dir="ltr">Al Nakhwe Sweets</bdi> © <bdi id="yr"></bdi></footer>
+<script src="script.js"></script>
+</body>
+</html>
